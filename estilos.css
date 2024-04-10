@@ -1,0 +1,29 @@
+.contenedor_aside {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    justify-items: end;
+}
+  
+.caja1{
+    background-color: rgb(182, 154, 182);
+    font-size: small;
+    height: auto;
+    width: 200px;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imagenes_aside{
+height: 100px;
+width: 160px;
+}
+
+.parrafos{
+text-align: justify;
+}
+
