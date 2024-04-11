@@ -1,2 +1,2 @@
 # Master DevOps-P1
-Albeiro Sánchez 
+Colaborador: Albeiro Sánchez 
