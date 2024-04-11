@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-imag img {
+  width: 100%;
+  height: 150px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-items: center;
+}
+
+.caja {
+  text-align: center;
+  box-shadow: 1px 1px 8px 1px;
+  margin: 20px 0;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.caja-front {
+  margin: 20px 20px 0 20px;
+  align-content: center;
+}
+
+.picture {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-body h5,
+p {
+  font-size: 12px;
+}
+
+.card-body a {
+  font-size: 25px;
+}
+
+.github {
+  color: black;
+}
+
+.github:hover {
+  color: #8d0801;
+}
+
+footer {
+  background-color: blueviolet;
+}
+
+/* Responsice Mayor 639px*/
+
+@media (min-width: 639px) {
+  .equipo {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .caja {
+    width: 80%;
+  }
+}
+
+/* Responsice Mayor 768px*/
+
+@media (min-width: 768px) {
+  .equipo {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  .caja {
+    width: 70%;
+  }
+}
+
+/* Responsice Mayor 896px*/
+
+@media (min-width: 896px) {
+  .equipo {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+
+  .caja {
+    width: 70%;
+  }
+}
+
+/* Responsice Mayor 1200px*/
+
+@media (min-width: 1024px) {
+  .equipo {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .equipo .caja {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .equipo .caja img {
+    transition: all 400ms ease-out;
+    will-change: transform;
+    margin: 0;
+  }
+
+  .equipo .caja .card-body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(192, 205, 207, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    align-content: center;
+  }
+
+  .equipo .caja:hover > .card-body {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .equipo .caja:hover > .card-body img {
+    transform: scale(1.3);
+  }
+
+  .equipo .caja .card-body p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .equipo .caja a {
+    font-size: 35px;
+  }
+
+  .caja {
+    width: 70%;
+  }
+
+  .caja h5 {
+    padding: 13px;
+    font-size: 18px;
+  }
+}
