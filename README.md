@@ -1,13 +1,9 @@
 # Master DevOps-P1
 
----
+Colaborador:
 
-####
-
----
-
-Colaborador: Albeiro Sánchez
-Colaborador: Juan Ariza
-Colaborador: Nicolas Torres
-Colaborador: Luis Zerpa
-Colaborador: Cristhian Vanegas
+- Juan Ariza
+- Albeiro Sánchez
+- Luis Zerpa
+- Nicolas Torres
+- Cristhian Vanegas
