@@ -1,3 +1,3 @@
 # Master DevOps-P1
 
-COLABORADOR: CRISTHIAN VANEGAS.
+Colaborador: Cristhian Vanegas.
