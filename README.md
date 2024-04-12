@@ -1,2 +1,7 @@
 # Master DevOps-P1
-Colaborador: Nicolas Torres
+
+Colaborador: 
+- Juan Ariza
+- Albeiro Sánchez 
+- Luis Zerpa
+- Nicolas Torres
