@@ -1,7 +1,6 @@
 # Master DevOps-P1
 
-<<<<<<< HEAD
-=======
-Colaborador: Juan Ariza
-Colaborador: Albeiro Sánchez 
->>>>>>> main
+Colaborador: 
+- Juan Ariza
+- Albeiro Sánchez 
+- Luis Zerpa
