@@ -6,7 +6,7 @@
 
 .banner-imag img {
   width: 100%;
-  height: 150px;
+  height: 120px;
 }
 
 .title {
@@ -27,7 +27,11 @@
   box-shadow: 1px 1px 8px 1px;
   margin: 20px 0;
   border-radius: 10px;
-  width: 120px;
+  width: 140px;
+}
+
+.container-foto {
+  height: 70%;
 }
 
 .caja-front {
@@ -36,9 +40,25 @@
 }
 
 .picture {
+  height: 100%;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.frontend {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.caja .albeiro,
+.luis {
+  object-fit: cover;
+}
+
+.card-body {
+  margin-top: 5px;
 }
 
 .card-body p {
@@ -76,6 +96,14 @@ footer {
   .caja {
     width: 80%;
   }
+  .equipo .caja .card-body h5 {
+    color: black;
+    font-size: 20px;
+  }
+  .equipo .caja .card-body p {
+    color: black;
+    font-size: 15px;
+  }
 }
 
 /* Responsice Mayor 768px*/
@@ -87,6 +115,15 @@ footer {
 
   .caja {
     width: 70%;
+  }
+
+  .equipo .caja .card-body h5 {
+    color: black;
+    font-size: 21px;
+  }
+  .equipo .caja .card-body p {
+    color: black;
+    font-size: 17px;
   }
 }
 
@@ -100,9 +137,18 @@ footer {
   .caja {
     width: 70%;
   }
+
+  .equipo .caja .card-body h5 {
+    color: black;
+    font-size: 22px;
+  }
+  .equipo .caja .card-body p {
+    color: black;
+    font-size: 18px;
+  }
 }
 
-/* Responsice Mayor 1200px*/
+/* Responsice Mayor 1024px*/
 
 @media (min-width: 1024px) {
   .equipo {
@@ -131,6 +177,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     align-content: center;
+    margin: 0;
   }
 
   .equipo .caja:hover > .card-body {
@@ -162,5 +209,9 @@ footer {
   .caja h5 {
     padding: 13px;
     font-size: 18px;
+  }
+
+  .container-foto {
+    height: 100%;
   }
 }
