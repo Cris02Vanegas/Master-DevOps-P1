@@ -4,45 +4,93 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px; /* DEJAR EN 0 */
-}
-
 .mainHome {
-  display: grid; /* ¿DEJAR? */
-  gap: 5px; /* ¿DEJAR? */
+  display: grid; /* BORRAR, para funcion gap, (visualización) */
+  gap: 5px; /* BORRAR, (visualización) */
+  margin: 5% 12% 5% 12%;
+  text-align: justify;
 }
 
 .divHomeInfo /* Div 2 parrafos MainHome */ {
-  border: black solid 1px; /* BORRAR */
-
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
-  background-color: aqua;
+  background-color: #00ffff;
   padding: 30px;
 }
 
-.img1y2 /* Div imgs MainHome */ {
-  border: black solid 1px; /* BORRAR */
+.carousel-inner {
+  text-align: center;
+  background-color: #00ffff44; /* CAMBIAR, al color elegido */
+}
 
+.carousel-inner img /* Div imgs MainHome */ {
+  height: 80px;
+  width: 170px;
+}
+.divJustificado {
+  align-items: center;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.carousel-control-prev-icon {
+  color: red;
+}
+
+/* Estilo Banner */
+.imagen_banner img {
+  width: 100%;
+}
+
+/* CSS Aside */
+.contenedor_aside {
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr 1fr;
+  grid-auto-columns: 1fr;
   grid-template-rows: 1fr;
-  background-color: antiquewhite;
-  padding: 30px;
+  gap: 0px 0px;
+  justify-items: end;
+  margin-top: 20px;
+  margin-right: 80px;
 }
 
-.img3y4 /* Div imgs MainHome */ {
-  border: black solid 1px; /* BORRAR */
-
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 3fr;
-  grid-template-rows: 1fr;
-  background-color: antiquewhite;
-  padding: 30px;
+.caja1 {
+  background-color: rgb(182, 154, 182);
+  font-size: small;
+  height: auto;
+  width: 330px;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-img {
-  height: 150px;
-  width: auto;
+.imagenes_aside {
+  height: 100px;
+  width: 160px;
+}
+
+.parrafos {
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .divJustificado {
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .mainHome {
+    margin: 3% 3% 3% 3%;
+  }
+  .contenedor_aside {
+    padding: 5px;
+    margin: 3% 3% 3% 3%;
+  }
+  .caja1 {
+    width: auto;
+  }
 }
