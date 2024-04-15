@@ -1,3 +1,9 @@
 # Master DevOps-P1
 
-Cristhian Vanegas
+Colaborador:
+
+- Juan Ariza
+- Albeiro Sánchez
+- Luis Zerpa
+- Nicolas Torres
+- Cristhian Vanegas
