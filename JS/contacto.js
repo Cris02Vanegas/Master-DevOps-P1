@@ -1,9 +1,9 @@
 'use strict';
 
 /* const $nombre = document.getElementById('nombre');
-const $correo = document.getElementById('correo');
-const $telefono = document.getElementById('telefono');
-const $mensaje = document.getElementById('mensaje');
+const $correo = document.getElementById('email');
+const $telefono = document.getElementById('telephone');
+const $mensaje = document.getElementById('mensaje-text');
 const $botonEnviar = document.getElementById('enviarMensaje');
 
 let nombre = null;
@@ -16,17 +16,25 @@ $nombre.addEventListener('input', (evento) => {
 });
 
 $correo.addEventListener('input', (evento) => {
-    email = evento.target.value;
+    correo = evento.target.value;
+});
+
+$telefono.addEventListener('input', (evento) => {
+    telefono = evento.target.value;
 });
 
 $mensaje.addEventListener('input', (evento) => {
     mensaje = evento.target.value;
-});
+})
 
 $botonEnviar.addEventListener('click', (evento) => {
     evento.preventDefault();
-    alert(nombre);
-    alert(correo);
-    alert(telefono);
-    alert(mensaje);
-}); */
+    console.log(nombre);
+    console.log(correo);
+    console.log(telefono);
+    console.log(mensaje);
+    /* if (evento !== null) {
+        alert("Formulario Completado")
+    } */
+    /* Agregar un alert que cuando termine de llenar el formulario diga formulario completado*/
+}); * /

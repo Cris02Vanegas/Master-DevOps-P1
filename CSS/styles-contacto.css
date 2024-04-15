@@ -47,7 +47,7 @@ textarea {
 }
 
 .boton {
-  background-color: #ca6702;
+  background-color: #57cc99;
   color: white;
   font-weight: 600;
 }
@@ -57,11 +57,11 @@ input {
 }
 
 .container-info input:focus {
-  border: 2px solid #ca6702;
+  border: 2px solid #57cc99;
 }
 
 .container-info textarea:focus {
-  border: 2px solid #ca6702;
+  border: 2px solid #57cc99;
 }
 
 .boton:hover {
@@ -112,7 +112,7 @@ textarea {
 }
 
 svg {
-  color: #ca6702;
+  color: #57cc99;
 }
 
 footer {
@@ -128,6 +128,14 @@ footer {
     font-weight: 600;
   }
 
+  .contacto {
+    padding: 10px;
+    border: gray solid 1px;
+    border-radius: 20px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
+    margin-bottom: 20px;
+  }
+
   .icon-box {
     flex-direction: column;
   }
@@ -139,16 +147,23 @@ footer {
 
   .container-data {
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .iframe {
-    width: 100%;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner-imag {
+    height: 200px;
+  }
+
+  .banner-imag img {
+    object-fit: cover;
+  }
   .container-info {
     /* flex-direction: row;
     justify-content: space-between; */
@@ -159,8 +174,17 @@ footer {
     font-weight: 700;
   }
 
+  .contacto {
+    padding: 10px;
+    border: gray solid 1px;
+    border-radius: 20px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
+    margin-bottom: 20px;
+  }
+
   .iframe {
     margin: 20px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
   }
 
   .iframe iframe {
@@ -182,15 +206,22 @@ footer {
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1399px) {
+  .banner-imag {
+    height: 100px;
+  }
+
+  .banner-imag img {
+    object-fit: cover;
+  }
+
   .container-info {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px 80px;
-    flex-wrap: wrap;
   }
 
   .contacto {
-    padding: 30px;
+    padding: 10px;
     border: gray solid 1px;
     border-radius: 20px;
     box-shadow: 2px -1px 9px 1px #8f8f8f;
@@ -210,6 +241,7 @@ footer {
 
   .iframe {
     margin: 20px 80px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
   }
 
   .iframe iframe {
@@ -222,6 +254,14 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) {
+  .banner-imag {
+    height: 200px;
+  }
+
+  .banner-imag img {
+    object-fit: cover;
+  }
+
   .container-info {
     flex-direction: row;
     justify-content: space-evenly;
@@ -249,6 +289,7 @@ footer {
 
   .iframe {
     margin: 20px 200px;
+    box-shadow: 2px -1px 9px 1px #8f8f8f;
   }
 
   .iframe iframe {
