@@ -21,11 +21,10 @@
   <body>
     <!-- Header: falta colocar el Logo.  -->
     <header
-      class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body sticky-top"
-      data-bs-theme="dark"
+      class="navbar navbar-expand-lg bg-body-primary border-bottom border-body sticky-top"
     >
       <nav class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="colorBlanco navbar-brand" href="#"><img class="tamañoLogoNav" src="/Imagenes/" alt="Logo de Solar Solutions"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,16 +39,16 @@
         <nav class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="colorBlanco nav-link" aria-current="page" href="#">Inicio</a> <!-- agregar la class active -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
+              <a class="colorBlanco nav-link" href="#">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="colorBlanco nav-link" href="#">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="colorBlanco nav-link" href="#">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -58,16 +57,16 @@
     <div class="imagen_banner">
     <img src="Imagenes/banner.jpg" alt="Imagen Banner">
   </div>
+<div class="containerMainAside">
     <main>
       <noscript>
         Por favor utiliza un navegador que tenga 'JavaScript' activo y
         funcional.
       </noscript>
-
       <div class="mainHome">
         <div class="divHomeInfo">
           <p class="Intro">
-            <strong>Solar Solution</strong> existe por la inceparable necesidad de
+            <strong>Solar Solutions</strong> existe por la inceparable necesidad de
             energía en nuestra sociedad; pues en este último siglo este bien
             intangible se ha convertido en algo inherente para cada individuo, y
             especialmente en nuestra capitál, Bogotá. Teniendo en cuenta que la
@@ -152,7 +151,7 @@
             data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="colorBlueMain carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -161,7 +160,7 @@
             data-bs-target="#carouselExampleInterval"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="colorBlueMain carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -170,7 +169,7 @@
 
     <aside>
       <div class="contenedor_aside">
-          <div class="caja1"><H4>Lo que no sabes de los paneles solares</H4>
+          <div class="caja1"><h4>Lo que no sabes de los paneles solares</h4>
               <hr>
                   <h6>Energias Limpias</h6>
                   <img src="Imagenes/calentamiento_global.jpg" alt="panel_1" class="imagenes_aside">
@@ -191,10 +190,11 @@
           </div>
       </div>    
   </aside>
+</div>
     <!-- Footer con nombre y menu de inicio y menu de contacto -->
 
     <footer
-      class="container row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      class="colorBlanco container row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
     >
       <div class="col mb-3">
         <a
@@ -205,7 +205,7 @@
             <use xlink:href="#bootstrap"></use>
           </svg>
         </a>
-        <p class="text-body-secondary">© Logo / company 2024</p>
+        <p class="text-body-light">© Logo / company 2024</p>
       </div>
 
       <div class="col mb-3"></div>
@@ -214,7 +214,7 @@
         <h5>Section</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary"
+            <a href="#" class="nav-link p-0 colorBlanco"
               ><img
                 class="rounded-circle me-1"
                 width="24"
@@ -224,7 +224,7 @@
             >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary"
+            <a href="#" class="nav-link p-0 colorBlanco"
               ><img
                 class="rounded-circle me-1"
                 width="24"
@@ -234,7 +234,7 @@
             >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary"
+            <a href="#" class="nav-link p-0 colorBlanco"
               ><img
                 class="rounded-circle me-1"
                 width="24"
@@ -244,7 +244,7 @@
             >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary"
+            <a href="#" class="nav-link p-0 colorBlanco"
               ><img
                 class="rounded-circle me-1"
                 width="24"
@@ -254,7 +254,7 @@
             >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary"
+            <a href="#" class="nav-link p-0 colorBlanco"
               ><img
                 class="rounded-circle me-1"
                 width="24"
@@ -269,13 +269,13 @@
         <h5>Menu</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Inicio</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Inicio</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Productos</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Productos</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Nosotros</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Nosotros</a>
           </li>
         </ul>
       </div>
@@ -283,19 +283,19 @@
         <h5>Contactenos</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Email</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Email</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">WhatsApp</a>
+            <a href="#" class="nav-link p-0 colorBlanco">WhatsApp</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">PhoneNumber</a>
+            <a href="#" class="nav-link p-0 colorBlanco">PhoneNumber</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Add1</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Add1</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Add2</a>
+            <a href="#" class="nav-link p-0 colorBlanco">Add2</a>
           </li>
         </ul>
       </div>
@@ -306,6 +306,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    >>>>>>> main
   </body>
 </html>

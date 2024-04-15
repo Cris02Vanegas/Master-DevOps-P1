@@ -2,23 +2,54 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: var(--mainFont);
+}
+
+:root {
+  --mainColorBlue: #22577a;
+  --mainColorBlueTransp: #22577a55;
+  --mainColorGreen: #57cc99;
+  --mainFont: "Play", sans-serif, monospace;
+}
+
+.navbar {
+  background-color: var(--mainColorBlue);
+}
+
+.row-cols-1 {
+  background-color: var(--mainColorBlue);
+}
+
+.colorBlanco {
+  color: #fff;
+}
+
+.colorBlueMain {
+  background-color: var(--mainColorBlue);
+}
+
+.containerMainAside {
+  display: flex;
+}
+
+.tamañoLogoNav {
+  border-radius: 25px 13px 13px 25px;
+  height: 40px;
 }
 
 .mainHome {
   display: grid; /* BORRAR, para funcion gap, (visualización) */
   gap: 5px; /* BORRAR, (visualización) */
-  margin: 5% 12% 5% 12%;
+  margin: 5% 5% 5% 12%;
   text-align: justify;
 }
 
 .divHomeInfo /* Div 2 parrafos MainHome */ {
-  background-color: #00ffff;
   padding: 30px;
 }
 
 .carousel-inner {
   text-align: center;
-  background-color: #00ffff44; /* CAMBIAR, al color elegido */
 }
 
 .carousel-inner img /* Div imgs MainHome */ {
