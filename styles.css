@@ -30,6 +30,7 @@
 
 .containerMainAside {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .tamañoLogoNav {
@@ -83,14 +84,15 @@
 }
 
 .caja1 {
-  background-color: rgb(182, 154, 182);
+  background-color: var(--mainColorBlue);
   font-size: small;
   height: auto;
   width: 330px;
   text-align: center;
   padding: 2% 2% 2% 2%;
   font-family: "Play", sans-serif;
-  font-weight: 400;
+  color: white;
+
   font-style: normal;
 }
 
@@ -103,11 +105,18 @@
   text-align: justify;
 }
 
+/* footer */
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* RESPONSIVE */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  body {
-    display: flex;
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .containerMainAside {
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .divJustificado {
     align-items: center;
@@ -123,5 +132,15 @@
   }
   .caja1 {
     width: auto;
+    font-size: 20px;
+  }
+  .divHomeInfo {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .divHomeInfo {
+    font-size: 13px;
   }
 }
