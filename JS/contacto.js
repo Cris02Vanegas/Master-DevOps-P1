@@ -28,6 +28,13 @@ $mensaje.addEventListener('input', (evento) => {
     mensaje = evento.target.value;
 })
 
+function resetDatos() {
+    nombre = null;
+    correo = null;
+    telefono = null;
+    mensaje = null;
+}
+
 $botonEnviar.addEventListener('click', (evento) => {
     evento.preventDefault();
     console.log(nombre);
@@ -37,27 +44,43 @@ $botonEnviar.addEventListener('click', (evento) => {
 
     if (nombre === null && correo === null && telefono === null && mensaje === null) {
         alert("Usted no ingreso ningún dato")
+        resetDatos();
         $formularioContacto.reset();
-    } else if (nombre === null && correo !== null && telefono !== null && mensaje !== null) {
+    }
+
+    if (!nombre || !correo || !telefono || !mensaje) {
+        alert("Llene los campos vacíos")
+        resetDatos();
+        $formularioContacto.reset();
+    }
+
+    if (nombre === null && correo !== null && telefono !== null && mensaje !== null) {
         alert("No ingreso su nombre")
+        resetDatos();
         $formularioContacto.reset();
-    } else if (correo === null && nombre !== null && telefono !== null && mensaje !== null) {
+    }
+
+    if (correo === null && nombre !== null && telefono !== null && mensaje !== null) {
         alert("No ingreso su correo")
+        resetDatos();
         $formularioContacto.reset();
-    } else if (telefono === null && correo !== null && nombre !== null && mensaje !== null) {
-        alert("No ingreso su telefono")
+    }
+
+    if (telefono === null && correo !== null && nombre !== null && mensaje !== null) {
+        alert("No ingreso su teléfono")
+        resetDatos();
         $formularioContacto.reset();
-    } else if (mensaje === null && correo !== null && telefono !== null && nombre !== null) {
+    }
+
+    if (mensaje === null && correo !== null && telefono !== null && nombre !== null) {
         alert("No ingreso su mensaje")
+        resetDatos();
         $formularioContacto.reset();
-    } else {
-        if (evento) {
-            $formularioContacto.reset();
-        }
-    } /* else {
-        if (nombre !== null && correo !== null && telefono !== null && mensaje !== null) {
-            alert("Gracias por diligeciar el formato")
-            $formularioContacto.reset();
-        }
-    } */
+    }
+
+    if (nombre !== null && correo !== null && telefono !== null && mensaje !== null) {
+        alert("Formato Diligenciado")
+        $formularioContacto.reset();
+    }
+
 });

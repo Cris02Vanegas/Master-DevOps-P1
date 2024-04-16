@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--mainFont);
 }
 
 :root {
   --mainColorBlue: #22577a;
   --mainColorGreen: #57cc99;
+  --mainFont: "Play", sans-serif, monospace;
 }
 
 header {
@@ -19,6 +21,12 @@ header {
   height: 120px;
   width: 100%;
   object-fit: cover;
+}
+
+.tamañoLogoNav {
+  border-radius: 25px 13px 13px 25px;
+  height: 60px;
+  width: 180px;
 }
 
 .container-info {
@@ -130,6 +138,7 @@ footer {
 .container-fluid {
   display: grid;
   grid-template-columns: auto;
+  text-align: start;
 }
 
 .container-fluid p {
@@ -138,6 +147,7 @@ footer {
 
 .container-fluid .col h5 {
   color: var(--mainColorGreen);
+  text-align: left;
 }
 
 .github-img img {
@@ -296,12 +306,8 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) {
-  .banner-imag {
-    height: 200px;
-  }
-
-  .banner-imag img {
-    object-fit: cover;
+  .banner-imag > img {
+    height: auto;
   }
 
   .container-info {

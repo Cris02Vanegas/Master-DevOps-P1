@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--mainFont);
 }
 
 :root {
   --mainColorBlue: #22577a;
   --mainColorGreen: #57cc99;
+  --mainFont: "Play", sans-serif, monospace;
 }
 
 header {
@@ -19,6 +21,12 @@ header {
   width: 100%;
   height: 120px;
   object-fit: cover;
+}
+
+.tamañoLogoNav {
+  border-radius: 25px 13px 13px 25px;
+  height: 60px;
+  width: 180px;
 }
 
 .title {
@@ -349,5 +357,9 @@ footer {
 
   .container-git ul {
     align-items: flex-start;
+  }
+
+  .container-fluid {
+    justify-content: space-around;
   }
 }

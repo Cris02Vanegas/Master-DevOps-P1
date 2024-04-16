@@ -20,6 +20,10 @@
   background-color: var(--mainColorBlue);
 }
 
+.container-fluid .collapse ul li :hover > a {
+  background-color: var(--mainColorGreen);
+}
+
 .colorBlanco {
   color: #fff;
 }
@@ -112,12 +116,30 @@
 
 /* footer */
 
-.container-fluid {
-  margin: 0px;
-  padding: 0px;
+footer {
+  background-color: var(--mainColorBlue);
 }
 
-.github img {
+.container-fluid {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: start;
+}
+
+.container-fluid p {
+  color: var(--mainColorGreen);
+}
+
+.container-fluid .col h5 {
+  color: var(--mainColorGreen);
+  text-align: left;
+}
+
+.container-fluid ul {
+  align-items: flex-start;
+}
+
+.github-img img {
   object-fit: contain;
 }
 
@@ -161,6 +183,10 @@
   .divHomeInfo {
     padding-top: 0px;
   }
+
+  .container-fluid {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -176,5 +202,9 @@
     font-size: 13px;
     align-items: flex-start;
     align-content: center;
+  }
+
+  .container-fluid {
+    grid-template-columns: auto auto auto auto;
   }
 }

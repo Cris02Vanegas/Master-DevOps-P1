@@ -103,12 +103,30 @@
 
 /* footer */
 
-.container-fluid {
-  margin: 0px;
-  padding: 0px;
+footer {
+  background-color: var(--mainColorBlue);
 }
 
-.github img {
+.container-fluid {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: start;
+}
+
+.container-fluid p {
+  color: var(--mainColorGreen);
+}
+
+.container-fluid .col h5 {
+  color: var(--mainColorGreen);
+  text-align: left;
+}
+
+.container-fluid ul {
+  align-items: flex-start;
+}
+
+.github-img img {
   object-fit: contain;
 }
 
@@ -171,10 +189,19 @@ figcaption {
   .divHomeInfo {
     font-size: 20px;
   }
+
+  .container-fluid {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
   .containerMainAside {
     margin: 0 40px 30px;
+  }
+
+  .container-fluid {
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
   }
 }
