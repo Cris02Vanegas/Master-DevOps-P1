@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Estilos para las tarjetas de los productos -->
+    <link rel="stylesheet" href="styleproductos.css">
     <title>Document</title>
   </head>
   <body>
@@ -25,82 +27,379 @@
       crossorigin="anonymous"
     ></script>
     <header>
-      <div>header</div>
+      <header
+      class="navbar navbar-expand-lg bg-body-primary border-bottom border-body sticky-top"
+    >
+      <nav class="container-fluid">
+        <a class="colorBlanco navbar-brand" href="#"><img class="tamañoLogoNav" src="/Imagenes/" alt="Logo de Solar Solutions"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" aria-current="page" href="#">Inicio</a> <!-- agregar la class active -->
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
     </header>
-    <aside>
-      <div class="contenedor_aside">
-        <div class="caja1">
-          <h4>PRODUCTOS</h4>
-          <hr />
-          <button type="button" class="btn btn-outline-light">
-            Sector Empresarial
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Soluciones Domésticas
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Gadjets Personales
-          </button>
-          <button type="button" class="btn btn-outline-light">Otros</button>
-          <hr />
-          <h4>Cotice aquí sus productos</h4>
-          <form class="row g-3">
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Producto</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Seleccione"
-              />
+    <div class="imagen_banner">
+    <img src="Imagenes/banner.jpg" alt="Imagen Banner">
+  </div>
+    </header>
+    <section class="container-fluid">
+      <div class="row">
+
+        <aside class="col-3 bg-success pt-3 mt-5">
+          <div class="contenedor_aside">
+            <div class="caja1">
+              <h4>PRODUCTOS</h4>
+              <hr />
+              <button type="button" class="btn btn-outline-light">
+                Sector Empresarial
+              </button>
+              <button type="button" class="btn btn-outline-light">
+                Soluciones Domésticas
+              </button>
+              <button type="button" class="btn btn-outline-light">
+                Gadjets Personales
+              </button>
+              <button type="button" class="btn btn-outline-light">Otros</button>
+              <hr />
+              <h4>Cotice aquí sus productos</h4>
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Producto</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Seleccione"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label"
+                    >Ingrese Cantidad</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Cantidad"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Valor Total</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Total"
+                  />
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                    <label class="form-check-label" for="gridCheck">
+                      Seleccione aquí para enviar su cotización
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="Ingrese su e-mail"
+                  />
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
             </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label"
-                >Ingrese Cantidad</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="Cantidad"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Valor Total</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Total"
-              />
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Seleccione aquí para enviar su cotización
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Ingrese su e-mail"
-              />
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
-        </div>
+          </div>
+        </aside>
+        <main class="col-9  pt-3 mt-5">
+    
+          <div class="container text-center">
+              <h2 class="h2 m-4">Nuestros productos</h2>
+      
+              <h3 class="text-center mt-4">Soluciones empresariales</h3>
+              
+              <!-- Productos de la categoría 1 -->
+              <section class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card border-0">
+                      <figure>
+                          <img src="img-productos/empresa1.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card border-0">
+                      <figure>
+                          <img src="img-productos/empresa2.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card border-0">
+                      <figure>
+                          <img src="img-productos/empresa3.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      
+              <h3 class="text-center mt-4">Soluciones hogar</h3>
+              
+              <!-- Productos de la categoría 2 -->
+              <section class="row justify-content-center text-center">
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/hogar1.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/hogar2.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/hogar3.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      
+              <h3 class="text-center mt-4">Gadgets</h3>
+              
+              <!-- Productos de la categoría 3 -->
+              <section class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/gadget1.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/gadget2.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                  <div class="card">
+                      <figure>
+                          <img src="img-productos/gadget3.jpg" class="card-img-top" alt="Producto categoría 1">
+                          <figcaption>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero id, quisquam laboriosam magni voluptatem obcaecati totam, rerum at voluptas rem, temporibus ab natus laborum. Odit modi ex consequatur commodi dolorem!</p>
+                          </figcaption>
+                      </figure>
+                    <div class="card-body">
+                      <h5 class="card-title">Producto 1</h5>
+                      <h5 class="card-text">$120.000.000</h5>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </main>     
+      </section>
       </div>
-    </aside>
-    <footer>Footer</footer>
+
+      <footer
+      class="colorBlanco container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+    >
+      <div class="col-10 mb-3">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-white text-center">© Logo / company 2024</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Albeiro Sanchez</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Cristhian Vanegas</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Juan Ariza</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Nicolas Torres</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Luis Zerpa</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Inicio</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Productos</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Contactenos</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Email</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">WhatsApp</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">PhoneNumber</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Add1</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Add2</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

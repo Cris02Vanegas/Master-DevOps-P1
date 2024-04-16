@@ -16,6 +16,11 @@
   background-color: var(--mainColorBlue);
 }
 
+.navbar-toggler {
+  background-color: #007bff;
+  border-color: rgba(255, 0, 0, 0.85);
+}
+
 .row-cols-1 {
   background-color: var(--mainColorBlue);
 }
