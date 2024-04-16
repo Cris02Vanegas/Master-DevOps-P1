@@ -255,7 +255,8 @@ footer {
 
 @media only screen and (min-width: 769px) and (max-width: 1399px) {
   .banner-imag {
-    height: 100px;
+    margin-bottom: 20px;
+    /* height: 100px; */
   }
 
   .banner-imag img {
@@ -266,6 +267,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px 80px;
+    gap: 20px;
   }
 
   .contacto {
