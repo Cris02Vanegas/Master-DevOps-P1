@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="Imagenes/IcoSolar.png" type="#" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="estilos_productos_aside.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,91 +16,400 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Solar Solutions - Productos</title>
   </head>
   <body>
+    <!-- -------------------------------------HEADER---------------------------------------------------------- -->
+    <header
+      class="navbar navbar-expand-lg bg-body-primary border-bottom border-body sticky-top pe-2"
+    >
+      <nav class="container-fluid">
+        <a class="colorBlanco navbar-brand ps-2" href="#"
+          ><img
+            class="tamañoLogoNav"
+            src="/Imagenes/logoSolarSolutionsNav.png"
+            alt="Logo de Solar Solutions"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse ps-2" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" aria-current="page" href="#"
+                >Inicio</a
+              >
+              <!-- agregar la class active -->
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlanco nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="banner-imag">
+      <img
+        src="./Imagenes_Nosotros-Contactos/imagen-contacto.jpeg"
+        alt="Imagen Banner"
+      />
+    </div>
+    <div class="containerMainAside">
+    <!-- ---------------------------ASIDE ------------------------------------------------------------>
+    <aside>
+      <div class="contenedor_aside">
+        <div class="caja1"><h2>Lo que no sabes de los paneles solares</h2>
+            <hr>
+                <h4>La energía solar es renovable</h4>
+                <img src="Imagenes/sol.jpeg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">El sol es un recurso inagotable, lo cual hace que la energía producida a partir de esta estrella sea renovable, pues se puede obtener en todo momento y lugar, a diferencia de las fuentes tradicionales, como el petróleo, carbón y otros combustibles fósiles, cuya existencia es finita.</p>
+                <a href="https://www.enelx.com/co/es/historias/12-datos-curiosos-que-no-conocias-de-la-energia-solar" target="blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+            <hr>
+                <h4>China, el país que más los usa</h4>
+                <img src="Imagenes/china.jpg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">China produce el 70% del total del mundo y concentra en su territorio casi el 40% de las reservas. Es por ello que en este país se encuentran algunas de las instalaciones fotovoltaicas más grandes del mundo. Incluso es el lugar donde mayor número de plantas solares hay construidas.</p>
+                <a href=https://efeverde.com/china-y-el-pnud-inauguran-una-planta-de-energia-solar-con-forma-de-oso-panda/ target="_blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+            <hr>
+                <h4>Una hora de luz solar equivale a un año de energía eléctrica para todo el planeta</h4>
+                <img src="Imagenes/horaSolar.jpg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">la energía producida por el sol es considerada la fuente de energía más abundante disponible en la tierra. Eso significa que con una hora de luz solar de nuestro planeta, se recolecta una cantidad de energía equivalente a lo que necesitan todos los habitantes de la tierra en un año.</p>
+                <a href=https://tronex-industrial.com/datos-curiosos-de-los-paneles-solares/ target="_blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+                <hr>
+        </div>
+    </div>
+    </aside>
+    <!-- --------------------------------------------MAIN ------------------------------------------------------->
+    <main>
+         <div class="container text-center">
+          <h2 class="h2 m-4" >Nuestros productos</h2>
+              <!-- Productos de la categoría 1 -->
+          <section class="row justify-content-center">
+          <br>
+          <br>
+          <br>
+            <h3 class="text-center mt-4">Soluciones empresariales</h3>
+            <hr>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/empresa1.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                            <br>
+                            <p>Sistema Solar Interconectado
+                            <p>Número de paneles: 15</p>
+                            <p>Potencia paneles: 315 WP</p>
+                            <p>Generación anual: 7.150 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 5 KwP</h5>
+                  <h5 class="card-text">$40.000.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/empresa2.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 110</p>
+                        <p>Potencia paneles: 400 WP</p>
+                        <p>Generación anual: 59.717 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 44 KwP</h5>
+                  <h5 class="card-text">$100.000.000</h5> 
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/empresa3.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 480</p>
+                        <p>Potencia paneles: 400 WP</p>
+                        <p>Generación anual: 260.582 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 44 KwP</h5>
+                  <h5 class="card-text">$120.000.000</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+               <!-- Productos de la categoría 2 -->
+          <section class="row justify-content-center text-center">
+            <br>
+            <hr>
+            <h3 class="text-center mt-4">Soluciones hogar</h3>
+            <hr>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/hogar1.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 4</p>
+                        <p>Potencia paneles: 84 WP</p>
+                        <p>Generación anual: 1.906 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 2 KwP</h5>
+                  <h5 class="card-text">$10.000.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/hogar2.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 8</p>
+                        <p>Potencia paneles: 168 WP</p>
+                        <p>Generación anual: 3.812 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 2,52 KwP</h5>
+                  <h5 class="card-text">$20.000.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/hogar3.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 12</p>
+                        <p>Potencia paneles: 252 WP</p>
+                        <p>Generación anual: 5.718 kWh</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema de energía solar de 3,78 KwP
+                  </h5>
+                  <h5 class="card-text">$30.000.000</h5>
+                </div>
+              </div>
+            </div>
+          </section>
+             <!-- Productos de la categoría 3 -->
+          <section class="row justify-content-center">
+            <br>
+            <hr>
+            <h3 class="text-center mt-4">Gadgets</h3>
+            <hr>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/gadget1.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 2</p>
+                        <p>Potencia paneles: 20 WP</p>
+                        <p>Puerto carga : USB-TipoC</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Morral con paneles solares
+                  </h5>
+                  <h5 class="card-text">$1.000.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/gadget2.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 1</p>
+                        <p>Potencia paneles: 10 WP</p>
+                        <p>Puerto carga : USB-TipoC</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Cargador de celular con paneles solares</h5>
+                  <h5 class="card-text">$500.000</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-8">
+              <div class="card border-0">
+                  <figure>
+                      <img src="img-productos/gadget3.jpg" class="card-img-top" alt="Producto categoría 1">
+                      <figcaption>
+                        <br>
+                        <p>Sistema Solar Interconectado
+                        <p>Número de paneles: 3</p>
+                        <p>Potencia paneles: 30 WP</p>
+                      </figcaption>
+                  </figure>
+                <div class="card-body">
+                  <h5 class="card-title">Cámara de vigilancia alimentada con paneles solares</h5>
+                  <h5 class="card-text">$1.000.000</h5>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+          <hr>
+    </main>
+  </div>
+  <!-- ----------------------------------------------------FOOTER----------------------------------- --------------------->
+    <footer
+      class="colorBlanco container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top"
+    >
+      <div class="col mb-3">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-light">© Logo / company 2024</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Albeiro Sanchez</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Cristhian Vanegas</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Juan Ariza</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Nicolas Torres</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco"
+              ><img
+                class="rounded-circle me-1"
+                width="24"
+                height="24"
+                src="https://github.com/mdo.png"
+              />Luis Zerpa</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Inicio</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Productos</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Contactenos</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Email</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">WhatsApp</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">PhoneNumber</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Add1</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 colorBlanco">Add2</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <header>
-      <div>header</div>
-    </header>
-    <aside>
-      <div class="contenedor_aside">
-        <div class="caja1">
-          <h4>PRODUCTOS</h4>
-          <hr />
-          <button type="button" class="btn btn-outline-light">
-            Sector Empresarial
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Soluciones Domésticas
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Gadjets Personales
-          </button>
-          <button type="button" class="btn btn-outline-light">Otros</button>
-          <hr />
-          <h4>Cotice aquí sus productos</h4>
-          <form class="row g-3">
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Producto</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Seleccione"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label"
-                >Ingrese Cantidad</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="Cantidad"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Valor Total</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Total"
-              />
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Seleccione aquí para enviar su cotización
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Ingrese su e-mail"
-              />
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </aside>
-    <footer>Footer</footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

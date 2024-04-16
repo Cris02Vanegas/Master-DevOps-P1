@@ -29,6 +29,7 @@
 }
 
 .banner-imag img {
+  object-fit: cover;
   width: 100%;
 }
 
@@ -39,7 +40,8 @@
 
 .tamañoLogoNav {
   border-radius: 25px 13px 13px 25px;
-  height: 40px;
+  height: 60px;
+  width: 180px;
 }
 
 .mainHome {
@@ -96,7 +98,6 @@
   padding: 2% 2% 5% 2%;
   font-family: "Play", sans-serif;
   color: white;
-
   font-style: normal;
 }
 
