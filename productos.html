@@ -23,10 +23,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    
     <title>Solar Solutions - Productos</title>
   </head>
   <body>
+    <!-- -------------------------------------HEADER---------------------------------------------------------- -->
     <header
       class="navbar navbar-expand-lg bg-body-primary border-bottom border-body sticky-top pe-2"
     >
@@ -72,90 +72,51 @@
     <div class="imagen_banner">
       <img src="Imagenes/banner.jpg" alt="Imagen Banner" />
     </div>
+    <div class="container-main_aside">
+    <!-- ---------------------------ASIDE ------------------------------------------------------------>
     <aside>
       <div class="contenedor_aside">
-        <div class="caja1">
-          <h4>PRODUCTOS</h4>
-          <hr />
-          <button type="button" class="btn btn-outline-light">
-            Sector Empresarial
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Soluciones Domésticas
-          </button>
-          <button type="button" class="btn btn-outline-light">
-            Gadjets Personales
-          </button>
-          <hr />
-          <h4>Cotice aquí sus productos</h4>
-          <form class="row g-3">
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Producto</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Seleccione"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label"
-                >Ingrese Cantidad</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="Cantidad"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Valor Total</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Total"
-              />
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Seleccione aquí para enviar su cotización
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress2"
-                placeholder="Ingrese su e-mail"
-              />
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </form>
+        <div class="caja1"><h2>Lo que no sabes de los paneles solares</h2>
+            <hr>
+                <h4>Energias Limpias</h4>
+                <img src="Imagenes/calentamiento_global.jpg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">Es la fuente de energía más limpia y no pone en peligro ni incrementa el calentamiento global, Las bajas emisiones de carbono hacen de la energía solar una alternativa sustentable a los combustibles fósiles</p>
+                <a href="https://www.nationalgeographicla.com/medio-ambiente/2022/04/la-energia-solar-y-su-potencial-para-ayudar-a-reducir-el-calentamiento-global" target="blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+            <hr>
+                <h4>¿Y si llueve o no hace sol?</h4>
+                <img src="Imagenes/panel_aside.jpg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">Los paneles solares funcionan gracias a la energía solar que captan a través de células fotovoltaicas. Cuando hay días nublados, la luz solar puede ser menor, pero esto no significa que los paneles dejen de funcionar.</p>
+                <a href=https://www.greenpeace.org/argentina/blog/problemas/climayenergia/como-funciona-un-panel-solar-explicado-de-una-manera-sencilla/#:~:text=En%20resumen%2C%20los%20paneles%20solares,electrones%20y%20les%20permite%20moverse. target="_blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+            <hr>
+                <h4>¿Y si llueve o no hace sol?</h4>
+                <img src="Imagenes/panel_aside.jpg" alt="panel_1" class="imagenes_aside">
+                <br>
+                <br>
+                <p class="parrafos">Los paneles solares funcionan gracias a la energía solar que captan a través de células fotovoltaicas. Cuando hay días nublados, la luz solar puede ser menor, pero esto no significa que los paneles dejen de funcionar.</p>
+                <a href=https://www.greenpeace.org/argentina/blog/problemas/climayenergia/como-funciona-un-panel-solar-explicado-de-una-manera-sencilla/#:~:text=En%20resumen%2C%20los%20paneles%20solares,electrones%20y%20les%20permite%20moverse. target="_blank">
+                    <button type="button" class="btn btn-outline-light">Conoce más aquí</button>
+                </a>
+            <hr>
         </div>
-      </div>
+    </div>
     </aside>
-    <main class="col-9  pt-3 mt-5">
-    
-      <div class="container text-center">
-          <h2 class="h2 m-4">Nuestros productos</h2>
-  
-          <h3 class="text-center mt-4">Soluciones empresariales</h3>
-          
-          <!-- Productos de la categoría 1 -->
+    <!-- --------------------------------------------MAIN ------------------------------------------------------->
+    <main>
+         <div class="container text-center">
+          <h2 class="h2 m-4" >Nuestros productos</h2>
+              <!-- Productos de la categoría 1 -->
           <section class="row justify-content-center">
+            <h3 class="text-center mt-4">Soluciones empresariales</h3>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/empresa1.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -169,7 +130,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/empresa2.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -183,7 +144,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/empresa3.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -197,13 +158,11 @@
               </div>
             </div>
           </section>
-  
-          <h3 class="text-center mt-4">Soluciones hogar</h3>
-          
-          <!-- Productos de la categoría 2 -->
+               <!-- Productos de la categoría 2 -->
           <section class="row justify-content-center text-center">
+            <h3 class="text-center mt-4">Soluciones hogar</h3>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/hogar1.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -217,7 +176,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/hogar2.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -231,7 +190,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/hogar3.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -245,13 +204,11 @@
               </div>
             </div>
           </section>
-  
-          <h3 class="text-center mt-4">Gadgets</h3>
-          
-          <!-- Productos de la categoría 3 -->
+             <!-- Productos de la categoría 3 -->
           <section class="row justify-content-center">
+            <h3 class="text-center mt-4">Gadgets</h3>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/gadget1.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -265,7 +222,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/gadget2.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -279,7 +236,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-8">
-              <div class="card">
+              <div class="card border-0">
                   <figure>
                       <img src="img-productos/gadget3.jpg" class="card-img-top" alt="Producto categoría 1">
                       <figcaption>
@@ -293,7 +250,9 @@
               </div>
             </div>
           </section>
-    </main> 
+    </main>
+  </div>
+  <!-- ----------------------------------------------------FOOTER----------------------------------- --------------------->
     <footer
       class="colorBlanco container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top"
     >
