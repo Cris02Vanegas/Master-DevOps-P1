@@ -29,6 +29,7 @@
 }
 
 .banner-imag img {
+  object-fit: cover;
   width: 100%;
 }
 
@@ -97,7 +98,6 @@
   padding: 2% 2% 5% 2%;
   font-family: "Play", sans-serif;
   color: white;
-
   font-style: normal;
 }
 
