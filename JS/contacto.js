@@ -36,11 +36,28 @@ $botonEnviar.addEventListener('click', (evento) => {
     console.log(mensaje);
 
     if (nombre === null && correo === null && telefono === null && mensaje === null) {
-        alert("Usted no digitó ningún dato")
-    } else if (nombre !== null || correo !== null || telefono !== null || mensaje !== null) {
-        alert("Faltó ingresar información")
+        alert("Usted no ingreso ningún dato")
+        $formularioContacto.reset();
+    } else if (nombre === null && correo !== null && telefono !== null && mensaje !== null) {
+        alert("No ingreso su nombre")
+        $formularioContacto.reset();
+    } else if (correo === null && nombre !== null && telefono !== null && mensaje !== null) {
+        alert("No ingreso su correo")
+        $formularioContacto.reset();
+    } else if (telefono === null && correo !== null && nombre !== null && mensaje !== null) {
+        alert("No ingreso su telefono")
+        $formularioContacto.reset();
+    } else if (mensaje === null && correo !== null && telefono !== null && nombre !== null) {
+        alert("No ingreso su mensaje")
         $formularioContacto.reset();
     } else {
-        alert("Gracias por diligenciar el formulario")
-    }
+        if (evento) {
+            $formularioContacto.reset();
+        }
+    } /* else {
+        if (nombre !== null && correo !== null && telefono !== null && mensaje !== null) {
+            alert("Gracias por diligeciar el formato")
+            $formularioContacto.reset();
+        }
+    } */
 });

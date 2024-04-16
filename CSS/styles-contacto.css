@@ -8,19 +8,17 @@
 
 :root {
   --mainColorBlue: #22577a;
+  --mainColorGreen: #57cc99;
 }
 
 header {
   background-color: var(--mainColorBlue);
 }
 
-.banner-imag {
-  height: 300px;
-}
-
 .banner-imag img {
-  height: 100%;
+  height: 120px;
   width: 100%;
+  object-fit: cover;
 }
 
 .container-info {
@@ -134,8 +132,16 @@ footer {
   grid-template-columns: auto;
 }
 
+.container-fluid p {
+  color: var(--mainColorGreen);
+}
+
+.container-fluid .col h5 {
+  color: var(--mainColorGreen);
+}
+
 .github-img img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 540px) {
@@ -191,8 +197,6 @@ footer {
     object-fit: cover;
   }
   .container-info {
-    /* flex-direction: row;
-    justify-content: space-between; */
     margin: 20px 30px;
   }
 
@@ -231,7 +235,7 @@ footer {
   }
   .container-fluid {
     grid-template-columns: auto auto;
-    text-align: center;
+    justify-content: space-between;
   }
 
   .github-img img {
