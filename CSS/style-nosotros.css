@@ -295,6 +295,9 @@ footer {
 }
 
 @media (min-width: 1025px) {
+  .banner-imag img {
+    height: 146px;
+  }
   .equipo {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
