@@ -11,32 +11,101 @@
   --mainColorGreen: #57cc99;
   --mainFont: "Play", sans-serif, monospace;
 }
+.navbar {
+  background-color: var(--mainColorBlue);
+}
 
+.row-cols-1 {
+  background-color: var(--mainColorBlue);
+}
+
+.colorBlanco {
+  color: #fff;
+}
+
+.colorBlueMain {
+  background-color: var(--mainColorBlue);
+}
+
+.containerMainAside {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.tamañoLogoNav {
+  border-radius: 25px 13px 13px 25px;
+  height: 60px;
+  width: 180px;
+}
+
+.mainHome {
+  display: grid; /* BORRAR, para funcion gap, (visualización) */
+  gap: 5px; /* BORRAR, (visualización) */
+  margin: 5% 5% 5% 12%;
+  text-align: justify;
+}
+
+/* Estilo Banner */
+.imagen_banner img {
+  width: 100%;
+}
 .contenedor_aside {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
+  margin-top: 20px;
+  margin-right: 80px;
 }
 
 .caja1 {
   background-color: var(--mainColorBlue);
   font-size: small;
   height: auto;
-  width: 200px;
+  width: 330px;
   text-align: center;
   padding: 2% 2% 2% 2%;
   font-family: "Play", sans-serif;
-  font-weight: 400;
   font-style: normal;
   color: white;
 }
 
-.imagenes_aside {
-  height: 100px;
-  width: 160px;
+/* footer */
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
 }
 
-.parrafos {
-  text-align: justify;
+/* RESPONSIVE */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .containerMainAside {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .divJustificado {
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .mainHome {
+    margin: 3% 3% 3% 3%;
+  }
+  .contenedor_aside {
+    padding: 5px;
+    margin: 3% 3% 3% 3%;
+  }
+  .caja1 {
+    width: auto;
+    font-size: 20px;
+  }
+  .divHomeInfo {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .divHomeInfo {
+    font-size: 13px;
+  }
 }
