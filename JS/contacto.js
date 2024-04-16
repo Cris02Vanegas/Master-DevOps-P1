@@ -1,10 +1,11 @@
 'use strict';
 
-/* const $nombre = document.getElementById('nombre');
+const $nombre = document.getElementById('nombre');
 const $correo = document.getElementById('email');
 const $telefono = document.getElementById('telephone');
 const $mensaje = document.getElementById('mensaje-text');
 const $botonEnviar = document.getElementById('enviarMensaje');
+const $formularioContacto = document.getElementById("formulario-contacto");
 
 let nombre = null;
 let correo = null;
@@ -33,8 +34,13 @@ $botonEnviar.addEventListener('click', (evento) => {
     console.log(correo);
     console.log(telefono);
     console.log(mensaje);
-    /* if (evento !== null) {
-        alert("Formulario Completado")
-    } */
-    /* Agregar un alert que cuando termine de llenar el formulario diga formulario completado*/
-}); * /
+
+    if (nombre === null && correo === null && telefono === null && mensaje === null) {
+        alert("Usted no digitó ningún dato")
+    } else if (nombre !== null || correo !== null || telefono !== null || mensaje !== null) {
+        alert("Faltó ingresar información")
+        $formularioContacto.reset();
+    } else {
+        alert("Gracias por diligenciar el formulario")
+    }
+});

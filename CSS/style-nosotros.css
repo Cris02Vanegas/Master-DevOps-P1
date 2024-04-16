@@ -1,7 +1,18 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --mainColorBlue: #22577a;
+  --mainColorGreen: #57cc99;
+}
+
+header {
+  background-color: var(--mainColorBlue);
 }
 
 .banner-imag img {
@@ -34,6 +45,11 @@
   height: 70%;
 }
 
+.container-foto img {
+  width: 100%;
+  height: 250px;
+}
+
 .caja-front {
   margin: 20px 20px 0 20px;
   align-content: center;
@@ -52,9 +68,14 @@
   margin-bottom: 10px;
 }
 
+.caja .cristhian {
+  object-fit: cover;
+}
+
 .caja .albeiro,
 .luis,
-.juan {
+.juan,
+.nicolas {
   object-fit: cover;
 }
 
@@ -78,13 +99,42 @@ p {
 .github {
   color: black;
 }
-
 .github:hover {
   color: #8d0801;
 }
 
 footer {
-  background-color: blueviolet;
+  background-color: var(--mainColorBlue);
+}
+
+.container-fluid {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: start;
+}
+
+.container-fluid p {
+  color: var(--mainColorGreen);
+}
+
+.container-fluid .col h5 {
+  color: var(--mainColorGreen);
+  text-align: left;
+}
+
+.container-fluid ul {
+  align-items: flex-start;
+}
+
+.github-img img {
+  object-fit: contain;
+}
+
+@media (min-width: 540px) {
+  .container-fluid {
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
 }
 
 /* Responsice Mayor 639px*/
@@ -104,6 +154,11 @@ footer {
   .equipo .caja .card-body p {
     color: black;
     font-size: 15px;
+  }
+
+  .container-foto img {
+    width: 100%;
+    height: 300px;
   }
 }
 
@@ -126,6 +181,11 @@ footer {
     color: black;
     font-size: 17px;
   }
+
+  .container-foto img {
+    width: 100%;
+    height: 350px;
+  }
 }
 
 /* Responsice Mayor 896px*/
@@ -147,11 +207,15 @@ footer {
     color: black;
     font-size: 18px;
   }
+
+  .container-fluid {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 /* Responsice Mayor 1024px*/
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .equipo {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
@@ -212,7 +276,73 @@ footer {
     font-size: 18px;
   }
 
-  .container-foto {
+  .container-git ul {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1025px) {
+  .equipo {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+
+  .equipo .caja {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .equipo .caja img {
+    transition: all 400ms ease-out;
+    will-change: transform;
+    margin: 0;
+  }
+
+  .equipo .caja .card-body {
+    position: absolute;
     height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(192, 205, 207, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    align-content: center;
+    margin: 0;
+  }
+
+  .equipo .caja:hover > .card-body {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .equipo .caja:hover > .card-body img {
+    transform: scale(1.3);
+  }
+
+  .equipo .caja .card-body p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .equipo .caja a {
+    font-size: 35px;
+  }
+
+  .caja {
+    width: 70%;
+  }
+
+  .caja h5 {
+    padding: 13px;
+    font-size: 18px;
+  }
+
+  .container-git ul {
+    align-items: flex-start;
   }
 }
